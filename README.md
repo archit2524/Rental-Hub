@@ -302,13 +302,20 @@ object={
 key : value, key : value, key : value,
 …
 }
-
 Day 14:
+
 ![image](https://github.com/user-attachments/assets/6305e407-cd04-4b7b-aadd-1b09593ef8ba)
 
 task1 print reverse of the word 
 task2 print and count vowels present in string 
 task3 convert characters at even places in string into 
+
+DAY15
+task-1 write program that print both string //are equal after combining each element of //array.
+task2 print the string in reverse order word//wise.
+task3 print string having maximum words from//array of strings.
+
+
 
 
 
