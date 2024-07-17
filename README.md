@@ -316,6 +316,170 @@ task2 print the string in reverse order word//wise.
 task3 print string having maximum words from//array of strings.
 
 
+DAY 16
+React Routing
+React Router is a popular library for implementing routing in React applications. It allows you to create single-page applications (SPAs) with multiple views or pages that can be navigated without causing a full page reload. React Router helps you manage the application's URL and rendering components based on the URL.
+To get started with React Router, you need to install the package using npm or yarn:
+npm install react-router-dom
+Once installed, you can use various components and features provided by React Router to set up routing in your application:
+1.	BrowserRouter: This component is used to wrap your entire application. It utilizes the HTML5 History API to handle navigation and updates the URL without triggering a full page reload.
+2.	Route: The Route component is used to define a mapping between a specific URL path and a corresponding component that should be rendered when that path is accessed.
+3.	Switch: The Switch component is used to render the first Route or Redirect that matches the current location. This is useful when you want to render only one route at a time.
+4.	Link: The Link component provides declarative navigation. It's similar to an anchor <a> tag but prevents a full page reload and updates the URL using the React Router mechanism.
+Here's a basic example of how to set up routing in a React application using React Router:
+
+DAY-17
+React Routing & Javascript String methods
+
+React Routing:
+React Routing is a way to handle navigation within a single-page application (SPA) built using the React library. In a traditional multi-page application, clicking on a link would cause the browser to request a new HTML page from the server. However, in a single-page application, the entire page is loaded once, and subsequent navigation is managed within the application itself, without full page reloads. React Router is a popular library for handling routing in React applications.
+Key Concepts:
+1.	Route: A route represents a specific URL path and is associated with a component that should be rendered when that path is accessed.
+2.	BrowserRouter: This is a type of router that uses the HTML5 History API to keep the UI in sync with the URL. It's typically used in web applications.
+3.	Route Rendering: When a route's path matches the current URL, the corresponding component is rendered.
+4.	Route Parameters: You can define dynamic parts in your route paths using placeholders, which are then accessible as props in the rendered component.
+5.	Nested Routes: You can nest routes to create complex page layouts where different components are rendered based on nested URLs.
+6.	Link: Instead of using anchor tags (<a>) for navigation, you use the Link component provided by React Router. It prevents full page reloads and updates the URL without refreshing the page.
+JavaScript String Methods:
+JavaScript provides a variety of methods for working with strings, allowing you to manipulate, transform, and extract information from strings. Here are some commonly used string methods:
+1.	charAt(index): Returns the character at the specified index in the string.
+2.	concat(str1, str2, ...): Concatenates two or more strings and returns the result.
+3.	indexOf(substring, startIndex): Returns the index of the first occurrence of a substring within the string, starting from the specified index.
+4.	substring(startIndex, endIndex): Returns a portion of the string between the specified indices.
+5.	slice(startIndex, endIndex): Similar to substring, but allows for negative indices to count from the end of the string.
+6.	toLowerCase() / toUpperCase(): Converts the string to lowercase or uppercase
+7.	trim(): Removes whitespace from the beginning and end of the string.
+8.	split(separator): Splits the string into an array of substrings based on the specified separator.
+9.	replace(oldValue, newValue): Replaces occurrences of oldValue with newValue in the string.
+10.	startsWith(prefix) / endsWith(suffix): Checks if the string starts with the specified prefix or ends with the specified suffix.
+11.	length: Returns the number of characters in the string.
+These are just a few examples of the many string methods JavaScript provides for various string manipulation tasks. Each method has its own use case and can greatly simplify string-related operations in your code.
+
+
+DAY-18
+React useState hook
+The useState hook is a fundamental hook in React that allows functional components to manage state. It provides a way to add state management capabilities to functional components without the need to convert them into class components. Here's how you use the useState hook:
+Key points about the useState hook:
+1.	The argument passed to useState is the initial value of the state.
+2.	The useState hook returns an array with two elements: the current state value and the state update function.
+3.	The state update function can be named anything you prefer; setCount in this example is a convention.
+4.	When the state is updated using the state update function, React will re-render the component with the new state value.
+5.	The state is preserved between renders, making it similar to the state managed by class components.
+Using the useState hook, you can manage multiple pieces of state within a functional component, making it a powerful tool for building dynamic UIs in React.
+Hookstate and its Features:
+As its name suggests, Hookstate is a fast and flexible state management tool based on the React state Hook. It’s a small library packed with features that include both global and local states, as well as partial state updates and asynchronously loaded states.
+Our focus for this article is on the @hookstate/core package, but Hookstate has several optional plugins that enable us to extend or customize our state Hooks — and the library’s documentation is well-written and packed with good demos. Below are some noteworthy plugins:
+•	@hookstate/persistence enables us to persist our state to the browser’s local storage, which is useful for offline apps or if you’d like a user to retain their state data after reloading the page
+•	@hookstate/validation can be very useful for form fields because it enables validation and error/warning messages for a state
+•	@hookstate/broadcasted is a very useful tool if you want to enable synchronization of your state across different browser tabs
+
+DAY-19
+
+React Local Storage and Session Storage
+Local Storage 
+Using localStorage and sessionStorage for storage is an alternative to using cookies and there are some advantages: The data is saved locally only and can’t be read by the server, which eliminates the security issue that cookies present. It allows for much more data to be saved (10mb for most browsers). The syntax is straightforward.
+
+
+You might want to save more complex types, like for example an object, an array or maybe a number, for that I usually recommend to use JSON.stringify and JSON.parse, which will allow you to save and retrieve said complex types in a string format:
+
+DAY 20
+
+FlexBox and its properties
+The flexible box layout module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
+When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.
+
+How do I create a flex container using Flexbox?
+
+•	An area of a document laid out using flexbox is called a flex container. To create a flex container, we set the value of the area's container's display property to flex or inline-flex. As soon as we do this the direct children of that container become flex items.
+
+Flexbox Properties
+The flex container is the parent element that holds the individual children or flex items. There are several properties we can use to create the flex container we want. Let’s examine the most important flex container properties. As we showed above, display defines a flex container, either inline or block.
+
+
+DAY 21
+Bootstrap carousel and navbar
+
+Bootstrap
+A carousel is a slideshow component that displays a series of images or content items. In Bootstrap, you can create a carousel using the Carousel component. Here's how you can set up a basic Bootstrap carousel:
+
+NavBar
+Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.
+How it works
+Here’s what you need to know before getting started with the navbar:
+•	Navbars require a wrapping .navbar with .navbar-expand{-sm|-md|-lg|-xl|-xxl} for responsive collapsing and color scheme classes.
+•	Navbars and their contents are fluid by default. Change the container to limit their horizontal width in different ways.
+•	Use our spacing and flex utility classes for controlling spacing and alignment within navbars.
+•	Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.
+•	Ensure accessibility by using a <nav> element or, if using a more generic element such as a <div>, add a role="navigation" to every navbar to explicitly identify it as a landmark region for users of assistive technologies.
+•	Indicate the current item by using aria-current="page" for the current page or aria-current="true" for the current item in a set.
+Supported content
+Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:
+•	.navbar-brand for your company, product, or project name.
+•	.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).
+•	.navbar-toggler for use with our collapse plugin and other navigation toggling behaviors.
+•	Flex and spacing utilities for any form controls and actions.
+•	.navbar-text for adding vertically centered strings of text.
+•	.collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint.
+•	Add an optional .navbar-scroll to set a max-height and scroll expanded navbar content.
+
+Day 22
+React JS: Building Blocks for Interactive Webpages
+•	Imagine building webpages like Legos! ️
+•	React JS is a popular JavaScript library for creating dynamic user interfaces.
+•	Think buttons, menus, and anything that changes on a webpage.
+•	It breaks down complex UIs into reusable components, making development easier.
+•	Components are like mini-Legos, each with its own purpose.
+•	React keeps track of changes, efficiently updating only what needs refreshing.
+•	Dive into React JS to build interactive and engaging web experiences!
+
+Day 23
+
+Node.js: JavaScript Beyond the Browse
+•	Imagine JavaScript buzzing around, not just in webpages!
+•	Node.js lets you run JavaScript code outside the browser, on the server.
+•	Like a beehive, it creates a busy environment for JavaScript to handle requests.
+•	This makes it great for building web applications, chat apps, and more.
+•	Node.js is known for its speed and efficiency, handling many tasks simultaneously.
+•	It's like having a swarm of bees working together!
+•	Explore Node.js to unlock the full potential of JavaScript!
+
+Day 24
+
+![image](https://github.com/user-attachments/assets/1165eec3-e702-4806-85a0-0c26118f4b5c)
+
+![image](https://github.com/user-attachments/assets/d5f3c053-80df-4dad-93f8-f594119ad191)
+
+
+Day 25
+
+![image](https://github.com/user-attachments/assets/39c0d483-3e3a-4332-a275-ad7e2c45b1cc)
+
+![image](https://github.com/user-attachments/assets/fe94eefa-addb-4a04-88ff-ca207c68c354)
+
+Day 26
+
+![image](https://github.com/user-attachments/assets/c3a769db-51df-4eba-b044-3b8cc4ed4392)
+
+![image](https://github.com/user-attachments/assets/e348ec9d-4f17-4aaf-bbf9-2d60b94bc96d)
+
+Day 27
+
+![image](https://github.com/user-attachments/assets/22bb8f12-aebe-457a-b155-4899bbf4f471)
+
+Day 28
+
+![image](https://github.com/user-attachments/assets/c07e0473-303a-4a3f-bc6e-374bdd28a81c)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
